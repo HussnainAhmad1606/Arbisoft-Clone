@@ -385,6 +385,86 @@ div.slide-item {
   color: white;
 }
 
+
+/*
+================================
+        Footer
+================================
+*/
+footer {
+  background-color: #0d3f8a;
+  padding: 30px;
+  color: #c0cdf7;
+}
+
+footer .first__section {
+  color: #c0cdf7;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+footer .first__section a {
+  text-decoration: none;
+  color: var(--color-white)
+}
+footer .first__section img {
+  width: 15%;
+}
+
+
+footer .second__section {
+  color: #c0cdf7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+footer .second__section p {
+  margin: 30px;
+}
+
+
+
+footer .last__section, footer .last__section div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+#footer__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#footer__links li a {
+  margin: 0px 30px;
+  text-decoration: none;
+  color: #c0cdf7;
+}
+
+footer .last__section .social-media ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+}
+
+footer .last__section .social-media ul li a {
+  background-color: #0a76db;
+  color: white;
+  margin: 0px 30px;
+  border-radius: 50%;
+  padding: 10px;
+}
 /*
 ================================
         Responsiveness
@@ -449,5 +529,9 @@ div.slide-item {
     }
     #jobs div {
       width: 80%;
+    }
+
+    #footer__links, .first__section, .second__section, .last__section {
+      flex-direction: column;
     }
 }
