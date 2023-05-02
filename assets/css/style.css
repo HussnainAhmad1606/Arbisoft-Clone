@@ -2,6 +2,7 @@
     --color-blue: #0a76db;
     --color-grey: #d0d0d0;
     --color-white: #fff;
+    --color-dark-blue: #223554;
 }
 * {
     margin: 0;
@@ -129,6 +130,51 @@ div.slide-item {
 .slide div p {
     color: var(--color-grey);
 }
+
+
+/*
+================================
+        Statistics
+================================
+*/
+
+#years {
+    color: var(--color-blue);
+}
+
+#statistics h1 {
+    color: var(--color-dark-blue)
+}
+
+#iconSection, .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    flex-direction: column;
+    border-right: 1px solid #dee2e6;
+
+    margin: 40px 0px;
+    text-align: center;
+    width: 35%;
+}
+
+#iconSection div:last-child {
+    border: 0;
+}
+
+#iconSection {
+    width: 93%;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 0px !important;
+}
+/*
+================================
+        Responsiveness
+================================
+*/
 
 @media screen and (max-width: 500px) {
     #one {
