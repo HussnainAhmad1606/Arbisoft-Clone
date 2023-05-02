@@ -147,9 +147,10 @@ div.slide-item {
 }
 
 #statistics {
-    height: 70vh;
+    height: 100vh;
     background-image: url("../img/statistics/bg.png");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #iconSection {
@@ -180,6 +181,44 @@ div.slide-item {
     border-radius: 0px 0px 20px 20px;
     border-top: 0px !important;
 }
+
+
+/*
+================================
+        Group Section
+================================
+*/
+
+#groupDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#groupDiv div {
+  width: 50%;
+}
+#group__photo img {
+  width: 95%;
+  object-fit: cover;
+}
+
+
+#group__content {
+  width: 95%;
+  padding: 30px;
+  background-color: #f4f5f7;
+  height: 90vh !important;
+  margin-left: -10%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 160px;
+}
+
 /*
 ================================
         Responsiveness
@@ -211,4 +250,21 @@ div.slide-item {
     .icon {
         width: 100%;
     }
+
+    #groupDiv {
+      flex-direction: column;
+    }
+    #group__content {
+      
+      margin-left: 0%;
+      
+      padding-left: 0px;
+    }
+    #groupDiv div {
+      width: 90%;
+    }
+    #statistics {
+      height: 150vh;
+    }
+    
 }
