@@ -221,6 +221,48 @@ div.slide-item {
 
 /*
 ================================
+      Accomplishments
+================================
+*/
+
+#accomplishments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+#accomplishments {
+  background-color: #f7fbff;
+}
+
+#accomplishments h1 {
+  color: var(--color-dark-blue);
+}
+
+#accomplishments p {
+  color: #f4f5f7;
+  width: 50%;
+  text-align: center;
+}
+
+#logos {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 115%;
+  padding: 0 90px;
+}
+
+
+
+/*
+================================
         Responsiveness
 ================================
 */
@@ -265,6 +307,13 @@ div.slide-item {
     }
     #statistics {
       height: 150vh;
+    }
+
+    #accomplishments {
+     height: 120vh;
+    }
+    #accomplishments p {
+      width: 80%;
     }
     
 }
