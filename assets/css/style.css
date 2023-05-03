@@ -306,6 +306,7 @@ div.slide-item {
 }
 
 #accomplishments h1 {
+  font-family: 'Roboto Slab', sans-serif;
   color: var(--color-dark-blue);
 }
 
@@ -541,17 +542,17 @@ footer .last__section .social-media ul li a {
     #one {
         background-image: url("../img/header-1-mobile.jpg") !important;
         background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #two {
+        background-size: contain;
+      }
+      #two {
         background-image: url("../img/header-2-mobile.jpg") !important;
         background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #three {
+        background-size: contain;
+      }
+      #three {
         background-image: url("../img/header-3-mobile.jpg") !important;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     #iconSection {
@@ -600,4 +601,27 @@ footer .last__section .social-media ul li a {
     #footer__links, .first__section, .second__section, .last__section {
       flex-direction: column;
     }
+
+    div.slide-item h1 {
+      font-size: 30px;
+     }
+
+     #statistics h1 {
+      font-size: 40px;
+     }
+
+     div.slide-item h1, div.slide-item p {
+      width: 80%;
+     }
+
+     .btnsHolder {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+     }
+
+
+    
+
+     
 }
