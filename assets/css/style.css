@@ -16,6 +16,7 @@
     Navbar
 ===============
 */
+
 nav {
   display: flex;
   justify-content: center;
@@ -26,6 +27,9 @@ nav {
   padding: 0;
   margin: 0;
   position:relative;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
 }
 
 nav ul.dropdown--list {
@@ -45,10 +49,11 @@ nav ul li {
 nav ul li a {
   color:#333333;
   display:block;
-  padding:0px 10px;
+  padding:0px 20px !important;
   text-decoration:none;
-  float: left;
   height: 60px;
+
+  margin-top: 25px;
    line-height: 60px;
    font-family: 'Nunito', sans-serif;
 }
@@ -192,7 +197,7 @@ div.slide-item {
 #statistics {
     height: 100vh;
     background-image: url("../img/statistics/bg.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -311,7 +316,8 @@ div.slide-item {
 }
 
 #accomplishments p {
-  color: #f4f5f7;
+  font-family: 'Nunito', sans-serif;
+  color:var(--color-dark-blue);
   width: 50%;
   text-align: center;
 }
@@ -332,6 +338,10 @@ div.slide-item {
         Testimonials
 ================================
 */
+#clientsHeading {
+  padding-top: 40px;
+  font-family: 'Roboto Slab', sans-serif;
+}
 .testimonials {
   background-color: var(--color-dark-blue);
   width: 100%;
@@ -339,11 +349,15 @@ div.slide-item {
 }
 
 .testimonial {
-  width: 100%;
+  width: 90%;
   background-color: var(--color-white);
   z-index: 1;
   height: 400px;
-  margin: 60px 60px;
+  margin: 60px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .testimonial .info {
@@ -364,11 +378,18 @@ div.slide-item {
 
 .testimonial .data h1 {
   font-size: 20px;
+  color: var(--color-dark-blue);
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.testimonial .data p {
+  font-family: "Nunito", sans-serif;
 }
 
 .testimonial .comment p {
   padding: 0% 10%;
-  color: #f4f5f7;
+  color: var(--color-dark-blue);
+  font-family: "Nunito", sans-serif;
 }
 
 .testimonial .test-logo img {
@@ -396,17 +417,35 @@ div.slide-item {
 */
 #partnershipSection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #f4f5f7;
   
 }
 
 #partnershipSection .partner__img img {
-  width: 80%;
+  width: 70%;
+  margin: 40px;
 }
+
+.partner__content h1 {
+  font-family: "Roboto Slab", sans-serif;
+  color: var(--color-dark-blue);
+  width: 50%;
+}
+
+.partner__content p {
+  width: 65%;
+  font-family: "Nunito", sans-serif;
+}
+
+
+.partner__content a {
+ margin: 50px 0px
+}
+
+
 
 /*
 ================================
@@ -415,20 +454,39 @@ div.slide-item {
 */
 #jobs {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 50%;
+  margin: 40px 0px
 }
 
 #jobs div {
   width: 50%;
-  height: 50vh;
+  height: 50%;
+  padding: 30px;
 }
 
 #jobs .jobs__global {
   background-color: #effaff;
 }
+
+
+#jobs div img {
+  float: right;
+  margin-top: 180px;
+}
+
+#jobs div h1 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 35px;
+  width: 80%;
+  margin: 10px;
+}
+#jobs div a {
+  font-family: "Nunito", sans-serif;
+}
+
 #jobs .jobs__venture {
   background-color: #fceed8;
 }
@@ -620,8 +678,48 @@ footer .last__section .social-media ul li a {
       flex-direction: column;
      }
 
+     #partnershipSection, .partner__content {
+      display: flex;
+  
+      justify-content: space-between;
+      align-items: center;
+     text-align: center;
+     flex-direction: column;
+      
+    }
 
-    
+    .partner__content {
+      margin: 20px;
+    }
+
+    .partner__content h1, .parent__content p {
+      width: 100%;
+    }
+
+    .partner__content h1 {
+      text-align: left;
+      margin: 20px 20px;
+    }
+
+    .partner__content p {
+      width: 100%;
+      margin: 0px 20px;
+      text-align: left;
+    }
+
+    .partner__content a {
+      margin-top: 30px;
+    }
+    #jobs div h1 {
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 22px;
+      width: 80%;
+      margin: 0px 0px 30px;
+    }
+
+    #jobs div {
+
+    }
 
      
 }

@@ -17,7 +17,6 @@ $('.testimonials').slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: 1000,
   dots: true,
   useCSS: true,
   responsive: [
