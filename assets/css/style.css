@@ -10,79 +10,112 @@
     box-sizing: border-box;
 }
 
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-  }
+
+/*
+===============
+    Navbar
+===============
+*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  width: 100%;
+  background: var(--color-white);
+  padding: 0;
+  margin: 0;
+  position:relative;
+}
+
+nav ul.dropdown--list {
+  list-style:none;
+  padding:0 20px;
+  margin: 0;
+  height: 300px;
+
+}
+
+
+nav ul li {
+  display: inline-block;
+}
+
+
+nav ul li a {
+  color:#333333;
+  display:block;
+  padding:0px 10px;
+  text-decoration:none;
+  float: left;
+  height: 60px;
+   line-height: 60px;
+   font-family: 'Nunito', sans-serif;
+}
+
+
+.arrow {
+  transform:
+  rotate(90deg);
+}
+.arrow:hover {
+ transform: rotate(-90deg) !important;
+ 
+}
+
+
+nav ul li:hover > a{
+    color:var(--color-blue);
+}
+
+nav ul li:hover > ul {
+  display:flex;
+}
+
+nav ul ul {
+  background: #BEBEBE;
+  padding:0;
+  text-align: center;
+  display:none;
+    width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+
+.dropdown--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+flex-direction: column;
+display: none;
+}
+
+.menus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+}
+
+
+nav ul ul {
   
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  display:none;
+    width: 100%;
+ 
+}
+
+.slide {
+  z-index: -5;
+}
 
 
 
   .button-blue {
+    font-family: 'Nunito', sans-serif;
     background-color: var(--color-blue);
     border-radius: 30px;
     padding: 12px 20px;
@@ -109,7 +142,12 @@ div.slide-item {
    }
 
    div.slide-item h1, div.slide-item p {
-    width: 60%;
+    width: 50%;
+   }
+
+   div.slide-item h1 {
+    font-size: 60px;
+    font-family: 'Roboto Slab', sans-serif;
    }
 #one {
     background-image: url("../img/header-1.jpeg");
@@ -132,6 +170,8 @@ div.slide-item {
 }
 
 
+
+
 /*
 ================================
         Statistics
@@ -143,7 +183,10 @@ div.slide-item {
 }
 
 #statistics h1 {
-    color: var(--color-dark-blue)
+    color: var(--color-dark-blue);
+    font-family: 'Roboto Slab' ,sans-serif;
+    font-weight: 700;
+    font-size: 60px;
 }
 
 #statistics {
@@ -217,6 +260,29 @@ div.slide-item {
   flex-direction: column;
   text-align: left;
   padding-left: 160px;
+}
+
+#group__content h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  color: var(--color-dark-blue);
+  font-size: 50px;
+}
+#group__content p {
+  font-family: 'Nunito', sans-serif;
+  
+}
+
+/*
+================================
+      Releationships
+================================
+*/
+
+
+.slick-prev-rel {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
 }
 
 /*
